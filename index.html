@@ -1,0 +1,116 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppeteer Recorder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Puppeteer Recorder</h1>
+  <button id="startBtn">Start Recording</button>
+  <button id="stopBtn">Stop Recording</button>
+  <p id="status"></p>
+  <h3>Generated Script:</h3>
+  <div id="output"></div>
+  <script src="renderer.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppeteer Recorder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #3498db;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+    button:hover {
+      background: #2980b9;
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    button:disabled {
+      background: #bdc3c7;
+      cursor: not-allowed;
+    }
+    #status {
+      margin: 10px 0;
+      font-size: 14px;
+      color: #16a085;
+    }
+    h3 {
+      color: #34495e;
+      margin-top: 30px;
+    }
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      background: #ecf0f1;
+      padding: 15px;
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #output::-webkit-scrollbar {
+      width: 10px;
+    }
+    #output::-webkit-scrollbar-thumb {
+      background: #bdc3c7;
+      border-radius: 5px;
+    }
+    #output::-webkit-scrollbar-thumb:hover {
+      background: #7f8c8d;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Puppeteer Recorder</h1>
+  <div style="text-align: center;">
+    <button id="startBtn">Start Recording</button>
+    <button id="stopBtn">Stop Recording</button>
+  </div>
+  <p id="status"></p>
+  <h3>Generated Script:</h3>
+  <div id="output"></div>
+  <script src="renderer.js"></script>
+</body>
+</html>
+
